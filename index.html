@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Forms</h1>
+    <form novalidate action="http://localhost:8800/form" method="POST">
+        <!--if method POST is not used then the get is called-->
+        <label>UserName : <input required type="text" name="text" id="name" value="Abhishek Sharma"></label>
+        <!--need to define name otherwise it will not gonna sent to server-->
+        <!--required will make a rule such that field not set to empty it should be filled-->
+        <!--novalidate : it can submit without entry we can submit empty -->
+        Male : <input type="radio" checked value="Male" name="sex">
+        Female : <input type="radio" checked value="Female" name="sex">
+        <button>Submit</button>
+        <!--Other way to create the button using the input element-->
+        <!-- <input type="button" value="Submit"> -->
+    </form>
+</body>
+
+</html>
